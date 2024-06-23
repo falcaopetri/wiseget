@@ -54,10 +54,15 @@ You can follow the official guide to [Run apps on a hardware device](https://dev
 - **Usability:**
   - [ ] Make the refresh action intuitive.
   - [ ] Clean up, refactor, and document everything.
+  - [ ] Add widget image to the repo.
+  - [ ] Add someway to go to the Readwise URL to see the original quote/highlight.
 - **UI Improvements:**
   - [ ] Fix title position.
   - [ ] Fix default widget size.
   - [ ] Implement a book cover-based dynamic background color.
+  - [ ] Add widget preview.
+  - [ ] Add app icon etc.
+  - [ ] Change fonts etc.
   - References:
     - [Official Readwise iOS Widget](https://readwise.io/changelog/ios-widget)
     - Android [Readwise Widget](https://play.google.com/store/apps/details?id=grape.k.readwiseapp&hl=pt_BR&gl=US) app
