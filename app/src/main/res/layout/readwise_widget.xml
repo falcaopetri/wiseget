@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/widget_background"
+    android:padding="16dp"
+    android:elevation="8dp"
+    android:layout_margin="8dp"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/widget_layout"
+    >
+
+    <!-- <ImageButton
+        android:id="@+id/widget_refresh_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:contentDescription="Refresh"
+        android:tint="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone" /> -->
+
+    <ImageView
+        android:id="@+id/widget_image"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="Book Cover"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/book_cover_placeholder"
+        android:elevation="4dp"
+        android:clipToOutline="true" />
+
+    <TextView
+        android:id="@+id/widget_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Title"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:layout_below="@id/widget_image"
+        android:layout_alignEnd="@id/widget_image"
+        android:layout_alignRight="@id/widget_image"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_toStartOf="@id/widget_image"
+        android:layout_toLeftOf="@id/widget_image"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/widget_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:lineSpacingExtra="4dp"
+            android:text="Quote will appear here"
+            android:textColor="#333333"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/widget_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Author"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>
